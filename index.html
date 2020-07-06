@@ -5,6 +5,15 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/style.css" type="text/css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script>
+
+            function feelinglucky(){
+              var query=document.getElementById("searchbar").value;
+              document.getElementById("hiddenquery").value= query;
+            };
+
+        </script>
     </head>
     <body>
       <div class="outer">
@@ -19,8 +28,13 @@
 
                 <div class="buttons">
                   <input type="submit" value="Google Search">
-                <input type="submit" value="I'm Feeling Lucky">
                 </div>
+              </form>
+
+              <form action="https://google.com/search" id="feelinglucky">
+                  <input type="hidden" name="q" id="hiddenquery">
+                  <input type="hidden" name="btnI">
+                  <input type="submit" value="I'm Feeling Lucky"  onclick="feelinglucky()">
               </form>
         </div>
 

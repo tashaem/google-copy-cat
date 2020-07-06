@@ -39,8 +39,21 @@ body {
   .buttons{
     flex-flow:row;
   }
-}
 
+  input[type="submit"]{
+    width:130px;
+    border:none;
+    border-radius:4px;
+    padding:7px 3px 7px 3px;
+    margin: 0px 5px;
+    color: #5e5e5e;
+  }
+  input[type="submit"]:hover{
+    //border:solid 1px lightgray;
+    box-shadow: 0px 0px 1px 0.5px gray;
+    color: black;
+  }
+}
 #searchbar{
     border:solid 1px lightgray;
     border-radius: 20px;
@@ -71,20 +84,8 @@ body {
     margin:5px 0px 25px 0px;
     padding-left: 20px;
   }
-  input[type="submit"]{
-    width:130px;
-    border:none;
-    border-radius:4px;
-    padding:7px 3px 7px 3px;
-    margin: 0px 5px;
-    color: #5e5e5e;
-  }
-  input[type="submit"]:hover{
-    //border:solid 1px lightgray;
-    box-shadow: 0px 0px 1px 0.5px gray;
-    color: black;
-  }
 }
+
 
 // Removes black border used to show that elements are focused
 *:focus {
