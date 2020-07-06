@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Advanced Search</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+      <div class="outer">
+
+        <div id="advancedheader">
+              <a href="index.html"><img src="images/logo.png" style="width:100px;" alt="Google Search"></a>
+        </div>
+
+        <div id="advancedtitle">
+            <h1>Advanced Search</h1>
+        </div>
+
+        <div class="container">
+
+          <div class="row">
+              <div class="col-lg-8 col-sm-12">
+              <p style="font-size:16px;">Find pages with..</p>
+
+              <form action="https://google.com/search" >
+
+                <!--All these words -->
+                <div class="form-group row">
+                    <label for="allthesewords" class="col-sm-4 col-form-label">all these words:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="allthesewords" name="as_q">
+                    </div>
+                </div>
+
+                <!--This exact word or phrase-->
+                <div class="form-group row">
+                    <label for="exactword" class="col-sm-4 col-form-label">this exact word or phrase:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="exactword" name="as_epq">
+                    </div>
+                </div>
+
+                <!--Any of these words-->
+                <div class="form-group row">
+                    <label for="anyof" class="col-sm-4 col-form-label">any of these words:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="anyof" name="as_oq">
+                    </div>
+                </div>
+
+                <!--None of these words-->
+                <div class="form-group row">
+                    <label for="noneof" class="col-sm-4 col-form-label">none of these words:</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="noneof" name="as_eq">
+                    </div>
+                </div>
+
+                <div class="abutton">
+                <input type="submit" value="Advanced Search" id="advancedbutton">
+                </div>
+              </form>
+              </div>
+
+
+              <div class="col-lg-4">
+                  <p style="font-weight:bold; color:#777777;">To do this in the search box.</p>
+                  <div id="sidecontent">
+                  <p>Type the important words: <span class="examples">tri-colour rat terrier</span></p>
+                  <p>Put exact words in quotes: <span class="examples">"rat terrier"</span></p>
+                  <p>Type <span class="examples">OR</span> between all the words you want: <span class="examples">miniature OR standard</span></p>
+                  <p style="padding-top:5px;">Put a minus sign just before words that you don't want: <span class="examples">-rodent, -"Jack Russell"</span></p>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </body>
+</html>
